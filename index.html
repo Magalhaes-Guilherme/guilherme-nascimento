@@ -158,11 +158,21 @@ section{padding:82px 0}
 .job:first-of-type{border-top:none}
 .job-meta .co{font-family:"Fraunces",serif;font-size:1.35rem;font-weight:600}
 .job-meta .role{margin-top:4px;font-size:15px;color:var(--ink-soft);font-weight:500}
-.job-meta .when{margin-top:12px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.05em;color:var(--ink-faint)}
+.job-meta .note{margin-top:8px;font-size:12.5px;font-weight:600;color:var(--accent);line-height:1.35}
+.job-meta .when{margin-top:12px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.03em;color:var(--ink-faint);line-height:1.45}
+.job-body{max-width:var(--textw)}
+.job-body .lead-line{color:var(--ink);font-weight:500;margin-bottom:20px;line-height:1.55}
 .job ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;max-width:var(--textw)}
 .job li{position:relative;padding-left:26px;color:var(--ink-soft);line-height:1.58}
 .job li::before{content:"";position:absolute;left:2px;top:11px;width:8px;height:8px;border:1.5px solid var(--accent);border-radius:50%}
 .job li b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+.subrole{margin-top:26px}
+.subrole:first-child{margin-top:0}
+.subrole-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  margin-bottom:14px;padding-bottom:9px;border-bottom:1px solid var(--line);
+  font-weight:700;font-size:15px;color:var(--ink)}
+.subrole-head span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:400;
+  letter-spacing:.03em;color:var(--ink-faint);white-space:nowrap;flex:none}
 
 /* ---------- STAGE BAND ---------- */
 .stage{padding:0}
@@ -280,7 +290,7 @@ section{padding:82px 0}
       </div>
       <div class="metric reveal">
         <div class="num">R$300MM</div>
-        <div class="lbl">em <b>oportunidades de expansão de receita</b> na estratégia de afiliadas Globo</div>
+        <div class="lbl">em <b>oportunidades de expansão de receita</b> em uma vertical estratégica</div>
       </div>
       <div class="metric reveal">
         <div class="num">+377%</div>
@@ -306,39 +316,65 @@ section{padding:82px 0}
       <div class="job-meta">
         <div class="co">Globo</div>
         <div class="role">Product Manager I &amp; II</div>
-        <div class="when">Jul 2024 — Atual</div>
+        <div class="note">Promovido a PM Pleno · Jan 2025</div>
+        <div class="when">Ago 2024 — Atual · Rio de Janeiro</div>
       </div>
-      <ul>
-        <li>Liderei a execução de roadmap em uma plataforma B2B de publicidade em larga escala, <b>reduzindo o volume de chamados em 92%</b> e diminuindo o tempo de atendimento em <b>80 horas</b> por meio de automação com IA, inteligência de dados e redesenho de processos.</li>
-        <li>Identifiquei <b>R$ 300MM</b> em oportunidades de expansão de receita na estratégia de afiliadas Globo.</li>
-        <li>Aumentei a <b>conversão de cadastro de usuários em até 46%</b> ao analisar pontos de abandono e otimizar os fluxos de onboarding.</li>
-        <li>Estruturei a coleta de dados de suporte ponta a ponta para clientes enterprise B2B (grandes anunciantes), viabilizando priorização de roadmap, governança de qualidade e melhorias de produto.</li>
-      </ul>
-    </article>
-
-    <article class="job">
-      <div class="job-meta">
-        <div class="co">SolPlace</div>
-        <div class="role">Desenvolvedor Python Junior</div>
-        <div class="when">Jul 2023 — Jun 2024</div>
+      <div class="job-body">
+        <p class="lead-line">Responsável pelo roadmap de uma plataforma B2B de publicidade digital em larga escala, conectando grandes anunciantes ao ecossistema Globo.</p>
+        <ul>
+          <li>Liderei a execução de roadmap que <b>reduziu em 92% o volume de chamados</b> e derrubou o SLA de atendimento em <b>94% — de 85h para 5h</b>, com automação por IA, redesenho de processos e instrumentação de dados.</li>
+          <li>Identifiquei <b>centenas de milhões</b> em oportunidades de expansão de receita em uma vertical estratégica e atuei como PM de iniciativas com impacto financeiro mensurável em um novo segmento.</li>
+          <li>Conduzi análise de funil que revelou pontos críticos de abandono no onboarding, elevando a <b>conversão de cadastro em até 46%</b>.</li>
+          <li>Liderei iniciativas que geraram <b>+377% de crescimento na receita</b> do produto Globo Impacto para todas as afiliadas Globo.</li>
+          <li>Estruturei a coleta e a governança de dados de suporte ponta a ponta para clientes enterprise, viabilizando priorização de roadmap orientada por evidência.</li>
+        </ul>
       </div>
-      <ul>
-        <li>Reduzi <b>bugs em produção em 40%</b> e <b>defeitos pós-release em 50%</b> ao fortalecer ciclos de testes e apoiar a adoção de Scrum, melhorando estabilidade e previsibilidade das entregas.</li>
-        <li>Automatizei fluxos analíticos com Python (pandas, numpy, matplotlib), aumentando a <b>produtividade da equipe em 15%</b> e acelerando a tomada de decisão orientada por dados.</li>
-      </ul>
     </article>
 
     <article class="job">
       <div class="job-meta">
         <div class="co">Globo</div>
-        <div class="role">Estagiário de Produto &amp; Operações · QA · Support · Product Owner</div>
-        <div class="when">Jul 2021 — Jun 2023</div>
+        <div class="role">Estágio de Produto &amp; Operações</div>
+        <div class="note">Product Owner · QA · Product Support Analyst</div>
+        <div class="when">Jul 2021 — Jun 2024 · Remoto</div>
       </div>
-      <ul>
-        <li>Atuei como ponte entre times de tecnologia e negócio, alinhando entregáveis, negociando trade-offs e apoiando a priorização de backlog para garantir entregas orientadas a valor — reduzindo o abandono de usuários em etapa crítica do funil.</li>
-        <li>Estruturei processos de governança de qualidade documentando casos de teste (Jira/Confluence), mapeando bugs em produção e definindo análise de causa raiz, fortalecendo a estabilidade das releases.</li>
-        <li>Gerenciei <b>mais de 800 chamados</b> de suporte N2, <b>recuperando mais de R$ 30 mil</b> em receita retida e desenhando fluxos de atendimento orientados por SLA, com visão ponta a ponta entre múltiplos squads.</li>
-      </ul>
+      <div class="job-body">
+        <div class="subrole">
+          <div class="subrole-head">Product Owner <span>Jul 2023 — Jun 2024</span></div>
+          <ul>
+            <li>Conduzi refinamento e escrita de histórias, análise de prioridades por Sprint e Quarter e a construção dos Quarter Plannings, com foco em entrega orientada a valor.</li>
+            <li>Apoiei decisões de priorização de backlog equilibrando negócio, restrições técnicas e stakeholders — desenvolvendo a visão de produto e a estratégia para o segmento.</li>
+          </ul>
+        </div>
+        <div class="subrole">
+          <div class="subrole-head">Quality Assurance <span>Jan 2023 — Jun 2023</span></div>
+          <ul>
+            <li>Executei ciclos de testes de integração, regressão, estrutural e de jornada, cobrindo os fluxos críticos do produto Globo Sim antes de cada release.</li>
+            <li>Estruturei cenários de teste no Jira e documentei casos e evidências no Confluence, criando base de conhecimento para análise de causa raiz.</li>
+          </ul>
+        </div>
+        <div class="subrole">
+          <div class="subrole-head">Product Support Analyst <span>Out 2022 — Dez 2022</span></div>
+          <ul>
+            <li>Conduzi análise de causa raiz dos problemas recorrentes, coordenando squads de engenharia, produto e negócios e contribuindo para a <b>redução do volume de chamados</b>.</li>
+            <li><b>Recuperei investimentos financeiros retidos</b> na plataforma ao resolver casos de compra complexos, gerando impacto direto na receita e na experiência dos anunciantes.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-meta">
+        <div class="co">SolPlace</div>
+        <div class="role">Product &amp; Data Analyst</div>
+        <div class="when">Jul 2021 — Set 2022 · Itajubá · Remoto</div>
+      </div>
+      <div class="job-body">
+        <ul>
+          <li>Contribuí para a redução de <b>40% em bugs em produção</b> e <b>50% em defeitos pós-release</b> ao fortalecer ciclos de testes e apoiar a adoção de práticas ágeis.</li>
+          <li>Automatizei fluxos analíticos com Python (pandas, numpy, matplotlib), elevando a <b>produtividade da equipe em 15%</b> e acelerando decisões orientadas por dados.</li>
+        </ul>
+      </div>
     </article>
   </div>
 </section>
